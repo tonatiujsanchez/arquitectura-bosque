@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="262" height="262" viewBox="0 0 262 262">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 13.265px;
+        font-family: Gentona;
+        font-weight: 200;
+      }
+
+      .cls-2 {
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <text id="AB" class="cls-1" transform="translate(-0.109 193.332) scale(16.186)">A<tspan class="cls-2">B</tspan></text>
+</svg>
