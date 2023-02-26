@@ -1,0 +1,192 @@
+:root {
+    --blanco: #FFF;
+    --negro: #111111;
+    --gris: #343A40;
+
+    --fuente-principal: 'Raleway', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+   box-sizing: inherit; 
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    margin: 1rem 0 4rem 0;
+}
+
+h1 { font-size: 4.8rem; } 
+h2 { font-size: 5.8rem; } 
+h3 { font-size: 5rem; }
+
+a { text-decoration: none; }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.btn {
+    color: var(--gris);
+    background-color: var(--blanco);
+    border: 0.1rem solid var(--gris);
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+    background-color: var(--gris);
+    color: var(--blanco);
+}
+
+/* Utilidades */
+.text-center { 
+    text-align: center;
+}
+
+.mt-5{ 
+    margin-top: 5rem;
+}
+
+/* ==== ==== ==== HEADER ==== ==== ==== */
+.header {
+    min-height: 80rem;
+    background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 2rem 0;
+        min-height: 80rem;
+    }
+}
+
+.contenido-header {
+    height: calc(70rem - 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--blanco);
+}
+
+.nombre-sitio {
+    font-weight: 300;
+    font-size: 5rem;
+    line-height: 1;
+    margin-top: 0;
+}
+
+.nombre-sitio span{
+    font-weight: 900;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .barra {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .contacto {
+        align-items: flex-end;
+    }
+}
+
+.contacto .telefono {
+    font-size: 3rem;
+    display: flex;
+}
+
+.telefono::before {
+    content: "";
+    display: block;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.4rem;
+}
+
+.header a {
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 768px){
+    .navegacion {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+}
+
+.navegacion a {
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.navegacion a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slogan h1 {
+    font-size: 4rem;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.slogan p {
+    font-size: 1.8rem;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+@media (min-width: 768px){
+    .slogan h1 {
+        font-size: 6.5rem;
+    }
+    
+    .slogan p {
+        font-size: 2.4rem;
+        margin: 0;
+    }  
+}
